@@ -1,4 +1,3 @@
-'use strict';
 var $ = require('../internals/export');
 var toAbsoluteIndex = require('../internals/to-absolute-index');
 var toIntegerOrInfinity = require('../internals/to-integer-or-infinity');
