@@ -1,3 +1,4 @@
+'use strict';
 var $ = require('../internals/export');
 var isArray = require('../internals/is-array');
 var isConstructor = require('../internals/is-constructor');

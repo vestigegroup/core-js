@@ -1,3 +1,4 @@
+'use strict';
 var $ = require('../internals/export');
 var aCallable = require('../internals/a-callable');
 var toObject = require('../internals/to-object');
