@@ -10,7 +10,7 @@ var constructorRegExp = /^\s*(?:class|function)\b/;
 var exec = constructorRegExp.exec;
 var INCORRECT_TO_STRING = !constructorRegExp.exec(function () { /* empty */ });
 
-var isConstructorModern = function (argument) {
+var isConstructorModern = function isConstructor(argument) {
   if (!isCallable(argument)) return false;
   try {
     construct(Object, empty, argument);
@@ -20,7 +20,7 @@ var isConstructorModern = function (argument) {
   }
 };
 
-var isConstructorLegacy = function (argument) {
+var isConstructorLegacy = function isConstructor(argument) {
   if (!isCallable(argument)) return false;
   switch (classof(argument)) {
     case 'AsyncFunction':
