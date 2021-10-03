@@ -1562,6 +1562,9 @@ GLOBAL.tests = {
     }
     return true;
   },
+  'web.dom-exception': function () {
+    return typeof DOMException === 'function';
+  },
   'web.immediate': function () {
     return setImmediate && clearImmediate;
   },
